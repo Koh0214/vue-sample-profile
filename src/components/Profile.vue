@@ -3,8 +3,6 @@
     <div class="content" v-for="i in 6" :key=i>
     <h3> {{ name }} </h3>
     <p> {{ text }} </p>
-    <br>
-    <p>{{ plus }}</p>
   </div>
   </div>
 </template>
@@ -14,9 +12,8 @@ export default {
   name: 'Output',
   data () {
     return {
-      name: 'カメラアプリを作成した',
-      text: 'このような意図で作成しました。ここをこのように工夫しました。ここが難しかったです。今後はこうゆう機能を追加したいです。'.repeat(3),
-      plus: 'これで、もっと内容を足せる感じかな。'
+      name: 'プロフィール',
+      text: 'このような意図でプロフィールを作成しました。ここをこのように工夫しました。ここが難しかったです。今後はこうゆう機能を追加したいです。'.repeat(3)
     }
   }
 }
